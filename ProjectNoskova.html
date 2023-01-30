@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Comfortaa:wght@500&family=Merriweather&family=PT+Mono&family=Tangerine&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d90c55b03d.js" crossorigin="anonymous"> </script>
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"> </script>
+
+</head>
+<body>
+ <div class="container-md">
+    <form>
+      <div class="enter-field">
+        <input type="text" class="border border-secondary p-2 mb-2 border-opacity-50 input-city" placeholder="Search for..." />
+        <input type="submit" class="border border-secondary p-2 mb-2 border-opacity-50" id = "search-text-input" value="🔎">
+        <div class="show-current-data">
+          <span><i class="fa-solid fa-location-dot fa-bounce" style="--fa-animation-duration: 3s; --fa-animation-iteration-count: 1"></i></span>
+        </div>
+      </div>
+        
+      </form>
+
+        <br />
+
+        <div class="row d-flex justify-content-center align-content-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="card" >
+                <div class="card-body">
+                 <header>Kharkiv</header>
+                </div>
+                <div class="time"> </div>
+                <div class="card-body temperature celsium">
+                    21°C 
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 align-self-center">
+            <i class="fa-regular fa-sun"></i>
+          </div>
+        </div>
+
+      <br />
+
+      <div class="row d-flex justify-content-center">
+        <div class="border border-secondary border-opacity-50 col-lg-2 col-md-6" > 
+            <h5 class="card-title">Mon <span>25th</span></h5>
+            <p class="card-text">21°C</p>
+            <p class="weatherImage">
+              <i class="fa-solid fa-cloud"></i>
+            </p>
+        </div>
+      
+        <div class="border border-secondary border-opacity-50 col-lg-2 col-md-6">
+            <h5 class="card-title">Tue <span>26th</span></h5>
+            <p class="card-text">16°C</p>
+            <p class="weatherImage">
+              <i class="fa-solid fa-cloud-sun"></i>
+            </p>
+        </div>
+      
+        <div class="border border-secondary border-opacity-50 col-lg-2 col-md-6">
+            <h5 class="card-title">Wed <span>27th</span></h5>
+            <p class="card-text">17°C</p>
+            <p class="weatherImage">
+              <i class="fa-solid fa-cloud-sun-rain"></i>
+            </p>
+        </div>
+      
+        <div class="border border-secondary border-opacity-50 col-lg-2 col-md-6">
+            <h5 class="card-title">Thu <span>28th</span></h5>
+            <p class="card-text">22°C</p>
+            <p class="weatherImage">
+              <i class="fa-solid fa-sun"></i>
+            </p>
+        </div>
+      
+        <div class="border border-secondary border-opacity-50 col-lg-2 col-md-6">
+            <h5 class="card-title">Fri <span>29th</span></h5>
+            <p class="card-text">26°C</p>
+            <p class="weatherImage">
+              <i class="fa-solid fa-sun"></i>
+            </p>
+        </div>
+      </div>
+
+      <br />
+
+      <h6>
+        Created by Alina Noskova
+      </h6>
+  </div>    
+  <script src="index.js"></script>
+</body>
+</html>

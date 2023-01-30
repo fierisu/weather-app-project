@@ -1,0 +1,159 @@
+.container-md {
+    max-width: 985px !important;
+    margin-top: 100px;
+}
+
+body {
+    background-color:#F0ECE3 !important;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    margin: 10px;
+    margin-left: 125px;
+    width: 600px;
+    height: 40px;
+    border-radius: 16px;
+    text-indent: 10px;
+    background-color: #DFD3C3;
+    color: #A68DAD;
+    font-family: 'Baloo 2', cursive;
+    font-size: 18px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder { 
+    color: #AC7088;
+    opacity: 1; 
+  }
+
+input[type="submit"] {
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color:#DFD3C3;
+}
+
+input[type="submit"]:hover {
+    background-color: #A68DAD;
+    transition: all 250ms;
+    cursor: pointer;
+    size: 200px;
+}
+.day-time {
+    font-size: 10px;
+    font-weight: lighter;
+}
+.col-lg-2 {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    background:#DFD3C3;
+}
+
+.card {
+    background-color: #DFD3C3 !important;
+    border-radius: 25px !important
+}
+
+.card-body {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 100px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.temperature {
+    cursor: pointer;
+    color: #AC7088 !important;
+}
+
+header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #AC7088;
+}
+
+.time {
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    margin: 0px 15px 0px 15px;
+    color: #AC7088;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    color: #AC7088;
+}
+
+.card-text{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    color: #AC7088;
+}
+
+span {
+    font-size: 18px;
+}
+
+.fa-location-dot {
+    font-size: 36px;
+    color: #A68DAD;
+}
+
+.enter-field {
+    display: flex;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.show-current-data {
+    margin: 10px;
+}
+
+.fa-location-dot:hover{
+    cursor: pointer;
+    transition: all 200ms ease;
+    opacity: 1;
+    font-size: 36.7px;
+}
+
+.fa-cloud, .fa-cloud-sun, .fa-cloud-sun-rain, .fa-sun{
+    font-size: 50px;
+}
+
+.fa-regular.fa-sun {
+    font-size: 100px;
+    color: #A68DAD;
+}
+
+.weatherImage {
+    text-align: center;
+    color: #A68DAD;
+}
+
+.col-lg-3 {
+    text-align: center;
+    color: #A68DAD;
+} 
+
+h6 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Baloo 2', cursive;
+    color: #AC7088 !important;
+}
