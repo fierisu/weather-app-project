@@ -20,7 +20,7 @@ input[type="text"] {
     border-radius: 16px;
     text-indent: 10px;
     background-color: #DFD3C3;
-    color: #A68DAD;
+    color: #AC7088;
     font-family: 'Baloo 2', cursive;
     font-size: 18px;
 }
@@ -43,7 +43,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #A68DAD;
+    background-color: #AC7088;
     transition: all 250ms;
     cursor: pointer;
     size: 200px;
@@ -72,14 +72,29 @@ input[type="submit"]:hover {
 }
 
 .temperature {
-    cursor: pointer;
     color: #AC7088 !important;
+    font-size: 32px;
 }
 
 header {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     color: #AC7088;
+}
+
+#to-celsius, #to-fahrenheit {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #AC7088 !important;
+    vertical-align: top;
+    letter-spacing: 2px;
+    
+}
+
+
+#to-celsius, #to-fahrenheit:hover {
+    color: #AC7088 !important;
 }
 
 .time {
@@ -112,7 +127,7 @@ span {
 
 .fa-location-dot {
     font-size: 36px;
-    color: #A68DAD;
+    color: #AC7088;
 }
 
 .enter-field {
@@ -138,17 +153,17 @@ span {
 
 .fa-regular.fa-sun {
     font-size: 100px;
-    color: #A68DAD;
+    color: #AC7088;
 }
 
 .weatherImage {
     text-align: center;
-    color: #A68DAD;
+    color: #AC7088;
 }
 
 .col-lg-3 {
     text-align: center;
-    color: #A68DAD;
+    color: #AC7088;
 } 
 
 h6 {
