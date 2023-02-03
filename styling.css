@@ -106,6 +106,18 @@ header {
     color: #AC7088;
 }
 
+.weather-description {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    color: #AC7088;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#description {
+    text-transform: capitalize;
+}
+
 .card-title {
     text-align: center;
     font-weight: bold;

@@ -10,6 +10,7 @@ const showCurrentDataBtn = document.querySelector('.show-current-data');
 let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity");
 let windElement = document.querySelector("#wind");
+let weatherDescriptionBlock = document.querySelector(".weather-description");
 let now = new Date();
 
 let currentTemperature
@@ -43,6 +44,9 @@ showCurrentDataBtn.addEventListener('click', () => {
 })
 
 searchButton.addEventListener("click", showCity);
+
+temperatureCelsius.addEventListener("click", toCelsius);
+ temperatureFahrenheit.addEventListener("click", toFahrenheit);
 
 function handlePosition(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=9b2899fa2589bca94665fbb84db2ef36`;
@@ -99,6 +103,3 @@ function toCelsius () {
   let temperature = Math.round((((currentTemperature) - 32) * 5) / 9);
   tempSection.innerHTML = `${temperature}°F`;
  }
-
- temperatureCelsius.addEventListener("click", toCelsius);
- temperatureFahrenheit.addEventListener("click", toFahrenheit);
