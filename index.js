@@ -7,6 +7,9 @@ const temperatureFahrenheit = document.querySelector("#to-fahrenheit");
 const apiKey = "9b2899fa2589bca94665fbb84db2ef36";
 const currentData = document.querySelector(".current-location-button");
 const showCurrentDataBtn = document.querySelector('.show-current-data');
+let descriptionElement = document.querySelector("#description");
+let humidityElement = document.querySelector("#humidity");
+let windElement = document.querySelector("#wind");
 let now = new Date();
 
 let currentTemperature
@@ -44,7 +47,7 @@ searchButton.addEventListener("click", showCity);
 function handlePosition(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=9b2899fa2589bca94665fbb84db2ef36`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(res => {
-    currentTemperature = res.data.main.temp
+    currentTemperature = res.data.main.temp;
     showCurrentCity(res)
     showTemperature(res)
   });
@@ -59,6 +62,9 @@ function showCityData (response) {
 currentTemperature = response.data.main.temp
  header.innerHTML = `${response.data.name}`;
  tempSection.innerHTML = `${Math.round(response.data.main.temp)}`
+ descriptionElement.innerHTML = `${response.data.weather[0].description}`;
+ humidityElement.innerHTML = `Humidity: ${response.data.main.humidity}%`;
+ windElement.innerHTML = `Windspeed: ${Math.round(response.data.wind.speed)}km/h`
 }
 
 function showCity(event) {
@@ -74,6 +80,10 @@ function showCity(event) {
 function showTemperature (response) {
   let temperatureCelsius = Math.round(response.data.main.temp);
   tempSection.innerHTML = `${temperatureCelsius}`;
+  tempSection.innerHTML = `${Math.round(response.data.main.temp)}`
+ descriptionElement.innerHTML = `${response.data.weather[0].description}`;
+ humidityElement.innerHTML = `Humidity: ${response.data.main.humidity}%`;
+ windElement.innerHTML = `Windspeed: ${Math.round(response.data.wind.speed)}km/h`
  }
 
  function showCurrentCity (response) {

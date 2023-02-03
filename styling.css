@@ -73,11 +73,11 @@ input[type="submit"]:hover {
 
 .temperature {
     color: #AC7088 !important;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 header {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: #AC7088;
 }
