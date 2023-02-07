@@ -60,10 +60,15 @@ input[type="submit"]:hover {
 }
 
 .card {
+    display:flex;
+    flex-basis: 200px;
+    align-items: center;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-around;
     background-color: #DFD3C3 !important;
     border-radius: 25px !important
 }
-
 .card-body {
     font-family: 'Comfortaa', cursive;
     font-weight: 100px;
@@ -91,7 +96,6 @@ header {
     letter-spacing: 2px;
     
 }
-
 
 #to-celsius, #to-fahrenheit:hover {
     color: #AC7088 !important;
