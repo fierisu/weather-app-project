@@ -120,8 +120,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
+ul {
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
 
 .weather-description {
     font-family: 'Comfortaa', cursive;
