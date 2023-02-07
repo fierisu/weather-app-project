@@ -129,6 +129,10 @@ ul {
     margin-bottom: 0px;
 }
 
+li {
+    font-weight: 400;
+}
+
 .weather-description {
     font-family: 'Comfortaa', cursive;
     font-size: 16px;
