@@ -110,6 +110,19 @@ header {
     color: #AC7088;
 }
 
+.card-body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .weather-description {
     font-family: 'Comfortaa', cursive;
     font-size: 16px;
@@ -178,6 +191,12 @@ span {
 }
 
 .col-lg-3 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #AC7088;
 } 
