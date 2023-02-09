@@ -97,8 +97,14 @@ header {
     
 }
 
-#to-celsius, #to-fahrenheit:hover {
+#to-celsius:hover {
     color: #AC7088 !important;
+    font-weight: bolder;
+}
+
+#to-fahrenheit:hover {
+    color: #AC7088 !important;
+    font-weight: bolder;
 }
 
 .time {
