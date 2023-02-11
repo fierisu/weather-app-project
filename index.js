@@ -12,6 +12,7 @@ let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity");
 let windElement = document.querySelector("#wind");
 let weatherDescriptionBlock = document.querySelector(".weather-description");
+
 let now = new Date();
 
 let currentTemperature
