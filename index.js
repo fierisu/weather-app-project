@@ -7,6 +7,7 @@ const temperatureFahrenheit = document.querySelector("#to-fahrenheit");
 const apiKey = "9b2899fa2589bca94665fbb84db2ef36";
 const currentData = document.querySelector(".current-location-button");
 const showCurrentDataBtn = document.querySelector('.show-current-data');
+let iconElement = document.querySelector("#weather-icon");
 let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity");
 let windElement = document.querySelector("#wind");
@@ -91,6 +92,7 @@ function showTemperature (response) {
  }
 
  function showCurrentCity (response) {
+  console.log(response)
   let currentCity = response.data.name;
   header.innerHTML = `${currentCity}`;
  }

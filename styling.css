@@ -159,7 +159,7 @@ li::first-letter {
     color: #AC7088;
 }
 
-.card-text{
+.forecast-temperature {
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 15px;
