@@ -151,6 +151,10 @@ li::first-letter {
     list-style-type: none;
 }
 
+#weather-icon {
+    color: #ac7088;;
+}
+
 .card-title {
     text-align: center;
     font-weight: bold;
@@ -159,7 +163,7 @@ li::first-letter {
     color: #AC7088;
 }
 
-.forecast-temperature {
+.forecast-temperature{
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 15px;

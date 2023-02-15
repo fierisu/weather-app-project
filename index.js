@@ -14,7 +14,6 @@ let windElement = document.querySelector("#wind");
 let weatherDescriptionBlock = document.querySelector(".weather-description");
 
 let now = new Date();
-
 let currentTemperature
 let time = document.querySelector(".time");
 let days = [
