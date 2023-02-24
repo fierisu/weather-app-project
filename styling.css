@@ -227,3 +227,32 @@ h6 {
     font-family: 'Baloo 2', cursive;
     color: #AC7088 !important;
 }
+
+.Clouds {
+    background: url('/src/brokenClouds.svg') center no-repeat;
+}
+
+.Clear {
+    background: url('/src/clearSky.svg') center no-repeat;
+}
+
+.Drizzle {
+    background: url('/src/drizzle.svg') center no-repeat;
+}
+
+.Rain {
+    background: url('/src/rain.svg') center no-repeat;
+}
+
+.Snow {
+    background: url('/src/snow.svg') center no-repeat;
+}
+
+.Thunderstorm {
+    background: url('/src/thunderstorm.svg') center no-repeat;
+}
+
+span[data-icon] {
+    width: 70%;
+    height: 70%;
+}

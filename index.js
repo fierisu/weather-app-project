@@ -55,6 +55,7 @@ function handlePosition(position) {
     currentTemperature = res.data.main.temp;
     showCurrentCity(res)
     showTemperature(res)
+    setIcon(res)
   });
 }
 
@@ -70,6 +71,7 @@ currentTemperature = response.data.main.temp
  descriptionElement.innerHTML = `${response.data.weather[0].description}`;
  humidityElement.innerHTML = `Humidity: ${response.data.main.humidity}%`;
  windElement.innerHTML = `Windspeed: ${Math.round(response.data.wind.speed)}km/h`
+ setIcon(response)
 }
 
 function showCity(event) {
@@ -104,4 +106,10 @@ function toCelsius () {
  function toFahrenheit () {
   let temperature = Math.round((((currentTemperature) - 32) * 5) / 9);
   tempSection.innerHTML = `${temperature}°F`;
+ }
+
+ function setIcon (weatherType) {
+  iconElement.className = '';
+  iconElement.classList.add(weatherType.data.weather[0].main)
+  console.log(iconElement.classList)
  }
